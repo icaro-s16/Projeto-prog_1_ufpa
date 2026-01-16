@@ -12,5 +12,8 @@ int main(){
     cout << *my_vector.get_index(1) << endl;
     *my_vector.get_index(0) += 10.0;
     cout << *my_vector.get_index(0) << endl;
+    cout << my_vector.len() << endl;
+    my_vector.pop(); 
+    cout << my_vector.len() << endl;
     return 0;
 }

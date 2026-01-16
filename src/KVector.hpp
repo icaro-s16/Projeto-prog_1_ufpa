@@ -14,6 +14,10 @@ class KVector{
         void append(T value);
         // Retorna o ponteiro do indice passado como argumento
         T* get_index(unsigned index);
+        // Função para excluir o último item adicionado no vetor
+        void pop();
+        // Retorna o tamanho atual do vetor
+        unsigned len();
         
 
     private:
@@ -37,6 +41,19 @@ template<typename T> T* KVector<T>::get_index(unsigned index){
     }else{
         return nullptr;
     }
+}
+
+template<typename T> void KVector<T>::pop(){
+    T *aux = new T[ --size ];
+    for (unsigned i = 0; i < size; i ++){
+        *(aux + i) = *(vec + i);
+    }
+    delete[] vec;
+    vec = aux;
+}
+
+template<typename T> unsigned KVector<T>::len(){
+    return size;
 }
 
 template<typename T> KVector<T>::KVector(){

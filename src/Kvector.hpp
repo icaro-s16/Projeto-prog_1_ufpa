@@ -22,7 +22,7 @@ class Kvector{
         
         size_t len(); // Retorna a quantidade de itens alocados
 
-        T* operator[](const size_t index);  
+        T& operator[](const size_t index);  
 
         // Operador de atribuição para gerenciamento das cópias 
         Kvector<T>& operator=(const Kvector<T>& other);
@@ -32,7 +32,7 @@ class Kvector{
         // Tamanho correspondente a quantidade de itens
         size_t size = 0;
         // Tamanho correspondente a capacidade total do vetor
-        size_t capactiy = 0;
+        size_t capacity = 0;
         
         void alloc(size_t size); // Alocação padrão
 };
@@ -42,7 +42,7 @@ class Kvector{
 template<typename T> Kvector<T>::Kvector(){
     vec = nullptr;
     size = 0;
-    capactiy = 0;
+    capacity = 0;
 }
 
 template<typename T> Kvector<T>::Kvector(std::initializer_list<T> init_vec){
@@ -50,22 +50,22 @@ template<typename T> Kvector<T>::Kvector(std::initializer_list<T> init_vec){
         alloc(init_vec.size());
         std::copy(init_vec.begin(), init_vec.end(), vec);
         size = init_vec.size();
-        capactiy = 0;
+        capacity = init_vec.size();
     }
 }
 
 template<typename T> Kvector<T>::Kvector(const Kvector<T>& other){
-    vec = new T[other.size];
+    vec = new T[other.capacity];
     for (size_t i = 0; i < other.size ; i ++){
         vec[i] = other.vec[i];
     }
-    capactiy = other.capactiy;
+    capacity = other.capacity;
     size = other.size;
 }
 
 template<typename T> Kvector<T>::~Kvector(){
     size = 0;
-    capactiy = 0;
+    capacity = 0;
     delete[] vec;
     vec = nullptr;
 }
@@ -74,8 +74,8 @@ template<typename T> Kvector<T>& Kvector<T>::operator=(const Kvector<T>& other){
     if (this != &other){
         delete[] vec;
         size = other.size;
-        capactiy = other.capactiy;
-        vec = new T[other.size];
+        capacity = other.capacity;
+        vec = new T[other.capacity];
         for (unsigned i = 0; i < size; i++){
             vec[i] = other.vec[i];
         }
@@ -83,16 +83,15 @@ template<typename T> Kvector<T>& Kvector<T>::operator=(const Kvector<T>& other){
     return *this;
 }
 
-template<typename T> T* Kvector<T>::operator[](const size_t index){
-    return vec + index;
+template<typename T> T& Kvector<T>::operator[](const size_t index){
+    return vec[index];
 }
 
 // Implementação dos métodos
 
 template<typename T> void Kvector<T>::push(T value){ 
-    if (capactiy == size){
-        if (capactiy == 0){ capactiy++; }
-        alloc( capactiy * 2);    
+    if (capacity == size){
+        alloc( capacity + 10);    
     }
     size++;
     vec[ size - 1 ] = value;
@@ -109,9 +108,7 @@ template<typename T> void Kvector<T>::pop(){
 template<typename T> void Kvector<T>::remove(const size_t index){
     if (index < size){
         for(size_t i = index; i < size - 1; i++){
-            T aux = vec[i + 1];
-            vec[i + 1] = vec[i];
-            vec[i] = aux;
+            vec[i] = vec[i+1];
         }
         size--;
     }
@@ -126,7 +123,7 @@ template<typename T> size_t Kvector<T>::len(){
 template<typename T>void Kvector<T>::alloc(size_t new_size){
     
     T* aux = new T[new_size]; // Aloca um novo espaço de acordo com o tamanho passado
-    capactiy = new_size;
+    capacity = new_size;
     // caso o vetor possua itens eles serão passados para esse novo espaço alocado
     if (size > 0){
         for (size_t i = 0; i < size; i++){

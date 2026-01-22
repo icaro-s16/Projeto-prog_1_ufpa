@@ -9,7 +9,7 @@ class Kvector{
         Kvector();
         // Construtor de cópias (deep copy)
         Kvector(const Kvector<T>& other);
-        // Constructor de inicialização apartir de literais
+        // Constructor de inicialização a partir de literais
         Kvector(std::initializer_list<T> init_vec);
         // Destructor 
         ~Kvector();
@@ -47,10 +47,20 @@ template<typename T> Kvector<T>::Kvector(){
 
 template<typename T> Kvector<T>::Kvector(std::initializer_list<T> init_vec){
     if (init_vec.size() > 0){
-        alloc(init_vec.size());
+        // Inicia o vetor com 40 espaços ou
+        // um valor > 40 e múltiplo de 10
+        if (init_vec.size() < 40){    
+            capacity = 40;
+            alloc(capacity);
+        }else if (init_vec.size() % 10 != 0){
+            capacity = init_vec.size() + (10 - (init_vec.size() % 10));
+            alloc(capacity);
+        }else{
+            capacity = init_vec.size();
+            alloc(capacity);
+        }
         std::copy(init_vec.begin(), init_vec.end(), vec);
         size = init_vec.size();
-        capacity = init_vec.size();
     }
 }
 
@@ -91,7 +101,12 @@ template<typename T> T& Kvector<T>::operator[](const size_t index){
 
 template<typename T> void Kvector<T>::push(T value){ 
     if (capacity == size){
-        alloc( capacity + 10);    
+        if (capacity == 0){
+            capacity = 40;
+            alloc(capacity);
+        }else{
+            alloc( capacity + 10);    
+        }
     }
     size++;
     vec[ size - 1 ] = value;
@@ -121,7 +136,6 @@ template<typename T> size_t Kvector<T>::len(){
 
 
 template<typename T>void Kvector<T>::alloc(size_t new_size){
-    
     T* aux = new T[new_size]; // Aloca um novo espaço de acordo com o tamanho passado
     capacity = new_size;
     // caso o vetor possua itens eles serão passados para esse novo espaço alocado

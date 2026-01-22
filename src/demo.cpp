@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "KVector.hpp"
+#include "Kvector.hpp"
 #include "Result.hpp"
 #include <memory>
 using namespace std;
@@ -18,18 +18,16 @@ Result<int, string> teste(int x){
 
 
 int main(){
-    vector<int> p = {1, 2, 3};
-    cout << p[0] << endl;
-    p[0] = 10;
-    cout << p[0] << endl;
-    KVector<int> my_vector;
+    Kvector<int> my_vector;
     my_vector.push(10);
-    my_vector.push(9);
-    cout << my_vector.len() << endl;
     cout << *my_vector[0] << endl;
-    my_vector.remove(0);
-    cout << *my_vector[0] << endl;
-    *my_vector[0] = 100;
-    cout << *my_vector[0] << endl;
+    my_vector.push(1);
+    cout << *my_vector[1] << endl;
+    Kvector<int> teste = {1,2,3,4,5};
+    cout << *teste[0] << endl;
+    teste.push(10);
+    cout << *teste[teste.len() - 1] << endl;
+    Kvector<int> p = teste;
+    cout << *p[0] << endl;
     return 0;
 }

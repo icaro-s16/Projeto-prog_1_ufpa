@@ -1,5 +1,5 @@
-#ifndef K_VECTOR_HPP
-#define K_VECTOR_HPP
+#ifndef KVECTOR_HPP
+#define KVECTOR_HPP
 
 
 template<typename T>
@@ -10,45 +10,53 @@ class KVector{
         // Destructor Default
         ~KVector();
     
-        // Função para alocar e adicionar o valor de parâmetro
-        void append(T value);
-        // Retorna o ponteiro do indice passado como argumento
-        T* get_index(unsigned index);
-        // Função para excluir o último item adicionado no vetor
-        void pop();
-        // Retorna o tamanho atual do vetor
-        unsigned len();
+        void push(T value);// Função para alocar e adicionar o valor de parâmetro
+
+        void remove(unsigned index); // Remove um item de uma posição especificada pelo index
+        
+        void pop(); // Função para excluir o último item adicionado no vetor
+        
+        unsigned len(); // Retorna o tamanho atual do vetor
+
+        T* operator[](const unsigned index);  
         
 
     private:
-        // Para iniciar apontando para o nada
         T *vec;
         unsigned size;
         
-        // Alocação padrão
-        void alloc(unsigned size);
+        void alloc(unsigned size); // Alocação padrão
 };
 
-template<typename T> void KVector<T>::append(T value){ 
-    size += 1;
-    alloc(size);
+
+template<typename T> void KVector<T>::push(T value){ 
+    alloc(++size);
     *(vec + (size - 1)) = value;
 }
 
-template<typename T> T* KVector<T>::get_index(unsigned index){
-    if(index < size){
-        return vec + index;       
-    }else{
-        return nullptr;
-    }
+template<typename T> T* KVector<T>::operator[](const unsigned index){
+    return vec + index;
 }
 
-template<typename T> void KVector<T>::pop(){
+template<typename T> void KVector<T>::pop(){ 
     T *aux = new T[ --size ];
     for (unsigned i = 0; i < size; i ++){
         *(aux + i) = *(vec + i);
     }
     delete[] vec;
+    vec = aux;
+    
+}
+
+template<typename T> void KVector<T>::remove(unsigned index){
+    T* aux = new T[ size - 1 ];
+    for(unsigned i = 0, j = 0; i < size; i++){
+        if ( i != index ){
+            *(aux + (j++)) = *(vec + i);
+        }
+    }
+    size--;
+    delete vec;
     vec = aux;
 }
 

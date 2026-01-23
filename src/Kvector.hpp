@@ -136,7 +136,7 @@ template<typename T> size_t Kvector<T>::len(){
 
 
 template<typename T>void Kvector<T>::alloc(size_t new_size){
-    T* aux = new T[new_size]; // Aloca um novo espaço de acordo com o tamanho passado
+    T* aux = new T[new_size];
     capacity = new_size;
     // caso o vetor possua itens eles serão passados para esse novo espaço alocado
     if (size > 0){

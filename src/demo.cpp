@@ -19,6 +19,7 @@ Result<int, string> teste(int x){
 
 int main(){
     Kvector<int> my_vector;
+    Kvector<double> m = {1.1,1.2,3.4};
     my_vector.push(10);
     cout << my_vector[0] << endl;
     my_vector.push(1);

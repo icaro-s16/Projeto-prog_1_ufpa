@@ -1,6 +1,7 @@
 #ifndef KVECTOR_HPP
 #define KVECTOR_HPP
 
+#include <cstddef>
 
 template<typename T>
 class Kvector{
@@ -151,3 +152,4 @@ template<typename T>void Kvector<T>::alloc(size_t new_size){
 }
 
 #endif
+

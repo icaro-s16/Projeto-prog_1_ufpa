@@ -14,6 +14,7 @@ struct Game
     int avaliation;
     int year;
     int id;
+
     // Constructor Default
     Game(){}
     // Constructor Preenchido, 
@@ -31,6 +32,13 @@ struct Game
     avaliation(new_avaliation),
     year(new_year),
     id(new_id){}
+
+    bool operator==(Game rhs){
+        return this->id == rhs.id || this->name == rhs.name;
+    }
+    bool operator!=(Game rhs){
+        return this->id != rhs.id && this->name != rhs.name;
+    }
 };
 
 class ListGames{
@@ -39,6 +47,12 @@ class ListGames{
 
         void add_game(Game game){
             list.push(game);
+        }
+        void remove_game(size_t index){
+            list.remove(index);
+        }
+        Game& get_game(size_t index){
+            return list[index];
         }
 
     private:

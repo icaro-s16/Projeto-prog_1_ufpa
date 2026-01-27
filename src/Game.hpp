@@ -35,31 +35,12 @@ struct Game
 
 class ListGames{
     public:
-        ListGames(){}
+        ListGames(){};
+
         void add_game(Game game){
             list.push(game);
         }
-        Result<std::string, std::string> save_games(std::string file_path){
-            Result<std::string, std::string> return_value;            
-            std::ofstream file(file_path, std::ios::app);
-            if (!file.is_open()) { // Verifica se o arquivo foi aberto corretamento
-                return_value.err("Não foi possível salvar a lista");
-                return return_value;
-            } else {
-                // Itera sobre cada posição do vetor e os salva no arquivo
-                for (size_t i = 0; i < list.len(); i++) {
-                    file << list[i].name << ";" 
-                        << list[i].publisher << ";" 
-                        << list[i].avaliation << ";" 
-                        << list[i].price << ";" 
-                        << list[i].year << std::endl;
-                }
 
-                file.close();
-                return_value.ok("A lista foi salva com sucesso");
-                return return_value;
-            }
-        }
     private:
         Kvector<Game> list;
 };

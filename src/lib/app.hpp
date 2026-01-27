@@ -1,8 +1,8 @@
 #ifndef APP_HPP
 #define APP_HPP
 
-#include "Kvector.hpp"
-#include "Result.hpp"
+#include "kvector.hpp"
+#include "result.hpp"
 #include "ui.hpp"
 #include <iostream>
 

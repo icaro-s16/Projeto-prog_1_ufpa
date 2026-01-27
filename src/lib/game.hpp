@@ -2,8 +2,8 @@
 #define GAME_HPP
 
 #include <fstream>
-#include "Kvector.hpp"
-#include "Result.hpp"
+#include "kvector.hpp"
+#include "result.hpp"
 #include <string>
 
 struct Game

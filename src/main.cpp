@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include "Kvector.hpp"
-#include "Result.hpp"
+#include "lib/kvector.hpp"
+#include "lib/result.hpp"
 #include <memory>
 #include <string>
 using namespace std;

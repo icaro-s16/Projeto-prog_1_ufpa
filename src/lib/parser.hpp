@@ -4,6 +4,9 @@
 #include "kvector.hpp"
 #include <iostream>
 
+#include <string>
+
+
 // Função para quebrar uma string em tokens 
 Kvector<std::string> split_string(std::string st, char delimiter){
     Kvector<std::string> tokens;

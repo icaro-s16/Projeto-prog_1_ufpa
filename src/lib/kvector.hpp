@@ -22,6 +22,7 @@ class Kvector{
         
         void pop(); // Função para excluir o último item adicionado no vetor
         
+        // Recebe uma função com retorno bool e retorna um vetor filtrado a partir da função
         Kvector<T> filter(bool (*func)(T)){
             Kvector<T> n_vec;
             for (size_t i = 0; i < size; i ++){
@@ -32,10 +33,13 @@ class Kvector{
             return n_vec;
         }
 
-        void map(T (*func)(T)){
+        // Transforma o vetor atual a partir de uma função
+        Kvector<T> map(T (*func)(T)){
+            Kvector<T> n_vec;
             for (size_t i = 0; i < size; i ++){
-                vec[i] = func(vec[i]);
+                n_vec.push(func(vec[i]));
             }
+            return n_vec;
         }
 
 

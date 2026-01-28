@@ -1,4 +1,201 @@
 # name;publisher;price;avaliation;year;id
-CS2;Valve;55.500000;7;1997;2
-BloodBorn;FromSoftware;202.100006;10;2016;3
-Dark Souls;FromSoftware;200.000000;10;2007;4
+CS2;Valve;55.50;7;1997;2
+BloodBorn;FromSoftware;202.10;10;2016;3
+Dark Souls;FromSoftware;200.00;10;2007;4
+RainbowSix;Ubisoft;200.00;5;2016;10
+bioshock;Bethesda;55.50;10;2007;101
+The Witcher 3;CD Projekt Red;150.00;10;2015;11
+Cyberpunk 2077;CD Projekt Red;199.90;8;2020;12
+Hades;Supergiant;92.50;10;2020;13
+Minecraft;Mojang;120.00;9;2011;14
+Terraria;Re-Logic;30.00;10;2011;15
+Starfield;Bethesda;299.00;7;2023;16
+Doom Eternal;id Software;140.00;9;2020;17
+Skyrim;Bethesda;160.00;10;2011;18
+Fallout 4;Bethesda;80.00;8;2015;19
+Red Dead Redemption 2;Rockstar;249.00;10;2018;20
+GTA V;Rockstar;100.00;9;2013;21
+Sekiro;FromSoftware;199.00;10;2019;22
+God of War;Sony;199.00;10;2018;23
+Spider-Man;Sony;249.00;9;2018;24
+Horizon Zero Dawn;Sony;150.00;8;2017;25
+Left 4 Dead 2;Valve;32.00;10;2009;26
+Portal 2;Valve;32.00;10;2011;27
+Half-Life 2;Valve;32.00;10;2004;28
+Dota 2;Valve;0.00;8;2013;29
+Apex Legends;EA;0.00;8;2019;30
+FIFA 23;EA;299.00;6;2022;31
+Mass Effect;EA;150.00;10;2007;32
+Dragon Age;EA;120.00;9;2009;33
+Battlefield 1;EA;160.00;8;2016;34
+Dead Space;EA;249.00;9;2023;35
+Overwatch 2;Blizzard;0.00;6;2022;36
+Diablo IV;Blizzard;349.00;7;2023;37
+StarCraft II;Blizzard;80.00;10;2010;38
+World of Warcraft;Blizzard;0.00;8;2004;39
+Hollow Knight;Team Cherry;45.00;10;2017;40
+Cuphead;StudioMDHR;36.00;10;2017;41
+Stardew Valley;ConcernedApe;25.00;10;2016;42
+Subnautica;Unknown Worlds;60.00;9;2018;43
+Outer Wilds;Annapurna;80.00;10;2019;44
+Tunic;Finji;50.00;9;2022;45
+Baldurs Gate 3;Larian Studios;199.00;10;2023;46
+Divinity OS 2;Larian Studios;90.00;10;2017;47
+Civilization VI;2K;120.00;9;2016;48
+Bioshock Infinite;2K;90.00;10;2013;49
+Borderlands 2;2K;80.00;9;2012;50
+XCOM 2;2K;150.00;9;2016;51
+Mafia III;2K;130.00;6;2016;52
+Final Fantasy VII;Square Enix;249.00;9;2020;53
+NieR Automata;Square Enix;100.00;10;2017;54
+Kingdom Hearts III;Square Enix;160.00;8;2019;55
+Tomb Raider;Square Enix;80.00;9;2013;56
+Just Cause 3;Square Enix;60.00;7;2015;57
+Persona 5;Atlus;249.00;10;2016;58
+Sonic Frontiers;Sega;199.00;7;2022;59
+Yakuza Like a Dragon;Sega;180.00;9;2020;60
+Total War Warhammer;Sega;240.00;8;2016;61
+Resident Evil 4;Capcom;249.00;10;2023;62
+Monster Hunter World;Capcom;120.00;9;2018;63
+Street Fighter 6;Capcom;249.00;9;2023;64
+Devil May Cry 5;Capcom;90.00;10;2019;65
+Mega Man 11;Capcom;100.00;8;2018;66
+Assassin Creed Valhalla;Ubisoft;249.00;7;2020;67
+Far Cry 6;Ubisoft;249.00;7;2021;68
+Watch Dogs Legion;Ubisoft;150.00;6;2020;69
+The Division 2;Ubisoft;120.00;8;2019;70
+Rayman Legends;Ubisoft;60.00;10;2013;71
+Ghost of Tsushima;Sony;249.00;10;2020;72
+The Last of Us;Sony;249.00;10;2013;73
+Bloodborne;Sony;150.00;10;2015;74
+Returnal;Sony;349.00;9;2021;75
+Death Stranding;505 Games;150.00;9;2019;76
+Control;505 Games;120.00;9;2019;77
+Assetto Corsa;505 Games;40.00;8;2014;78
+Terraria;505 Games;30.00;10;2011;79
+Sifu;Sloclap;75.00;9;2022;80
+Vampire Survivors;poncle;15.00;10;2022;81
+Valheim;Coffee Stain;40.00;9;2021;82
+Satisfactory;Coffee Stain;90.00;9;2019;83
+Deep Rock Galactic;Coffee Stain;60.00;10;2020;84
+Factorio;Wube Software;100.00;10;2016;85
+RimWorld;Ludeon Studios;110.00;10;2018;86
+Project Zomboid;Indie Stone;40.00;9;2013;87
+Among Us;Innersloth;15.00;8;2018;88
+Phasmophobia;Kinetic Games;30.00;9;2020;89
+Rust;Facepunch;120.00;8;2013;90
+Garrys Mod;Facepunch;30.00;10;2006;91
+Undertale;tobyfox;20.00;10;2015;92
+Deltarune;tobyfox;0.00;10;2018;93
+Celeste;Extremely OK;40.00;10;2018;94
+Inscryption;Devolver Digital;50.00;10;2021;95
+Cult of the Lamb;Devolver Digital;80.00;9;2022;96
+Katana ZERO;Devolver Digital;30.00;10;2019;97
+Hotline Miami;Devolver Digital;25.00;10;2012;98
+Outer Wilds;Annapurna;80.00;10;2019;99
+Neon White;Annapurna;80.00;9;2022;100
+Stray;Annapurna;90.00;9;2022;102
+Disco Elysium;ZA/UM;80.00;10;2019;103
+Journey;Annapurna;30.00;10;2012;104
+The Forest;Endnight;40.00;8;2014;105
+Sons of the Forest;Endnight;90.00;8;2023;106
+Alan Wake 2;Epic Games;270.00;10;2023;107
+Control;Remedy;120.00;9;2019;108
+Max Payne 3;Rockstar;99.00;9;2012;109
+L.A. Noire;Rockstar;80.00;8;2011;110
+Bully;Rockstar;40.00;9;2006;111
+Manhunt;Rockstar;30.00;7;2003;112
+Sleeping Dogs;Square Enix;55.00;9;2012;113
+Watch Dogs 2;Ubisoft;150.00;8;2016;114
+Splinter Cell;Ubisoft;40.00;10;2002;115
+Ghost Recon;Ubisoft;199.00;7;2019;116
+The Crew Motorfest;Ubisoft;299.00;8;2023;117
+South Park Stick of Truth;Ubisoft;120.00;10;2014;118
+For Honor;Ubisoft;60.00;7;2017;119
+Anno 1800;Ubisoft;180.00;9;2019;120
+Prince of Persia;Ubisoft;249.00;9;2024;121
+Dead Island 2;Deep Silver;299.00;8;2023;122
+Metro Exodus;Deep Silver;120.00;9;2019;123
+Saints Row IV;Deep Silver;60.00;8;2013;124
+Payday 2;Starbreeze;35.00;9;2013;125
+Payday 3;Starbreeze;199.00;6;2023;126
+Tekken 8;Bandai Namco;349.00;10;2024;127
+Pac-Man World;Bandai Namco;120.00;7;2022;128
+Dark Souls II;FromSoftware;150.00;8;2014;129
+Dark Souls III;FromSoftware;249.00;10;2016;130
+Armored Core VI;FromSoftware;249.00;9;2023;131
+Little Nightmares II;Bandai Namco;120.00;9;2021;132
+Tales of Arise;Bandai Namco;180.00;9;2021;133
+Scarlet Nexus;Bandai Namco;150.00;8;2021;134
+Code Vein;Bandai Namco;120.00;8;2019;135
+Katamari Damacy;Bandai Namco;60.00;9;2018;136
+Titanfall 2;EA;90.00;10;2016;137
+Mirror's Edge Catalyst;EA;80.00;7;2016;138
+Need for Speed Unbound;EA;299.00;7;2022;139
+It Takes Two;EA;199.00;10;2021;140
+Unravel;EA;60.00;9;2016;141
+Crysis Remastered;Crytek;120.00;8;2020;142
+Hunt Showdown;Crytek;90.00;9;2019;143
+Warframe;Digital Extremes;0.00;9;2013;144
+Path of Exile;Grinding Gear;0.00;9;2013;145
+Guild Wars 2;ArenaNet;0.00;9;2012;146
+Palworld;Pocketpair;90.00;8;2024;147
+Lethal Company;Zeekerss;32.00;10;2023;148
+BattleBit Remastered;SgtOkiDoki;50.00;9;2023;149
+Dave the Diver;MINTROCKET;70.00;10;2023;150
+Dredge;Black Salt;80.00;9;2023;151
+Sea of Stars;Sabotage;120.00;10;2023;152
+The Messenger;Sabotage;60.00;9;2018;153
+Blasphemous 2;The Game Kitchen;100.00;9;2023;154
+Dead Cells;Motion Twin;50.00;10;2018;155
+Risk of Rain 2;Hopoo Games;60.00;10;2020;156
+Deep Rock Galactic Survivor;Funday;32.00;8;2024;157
+Valheim;Iron Gate;40.00;9;2021;158
+Hellblade II;Ninja Theory;220.00;9;2024;159
+Hi-Fi RUSH;Tango Gameworks;120.00;10;2023;160
+The Evil Within 2;Tango Gameworks;150.00;9;2017;161
+Ghostwire Tokyo;Tango Gameworks;199.00;7;2022;162
+Wolfenstein II;Bethesda;150.00;9;2017;163
+Prey;Bethesda;120.00;10;2017;164
+Dishonored 2;Bethesda;120.00;10;2016;165
+Deathloop;Bethesda;249.00;8;2021;166
+Quake Champions;id Software;0.00;7;2017;167
+Rage 2;Bethesda;150.00;6;2019;168
+Dragon's Dogma 2;Capcom;339.00;8;2024;169
+Exoprimal;Capcom;249.00;6;2023;170
+Okami HD;Capcom;60.00;10;2017;171
+Viewtiful Joe;Capcom;40.00;9;2003;172
+Lost Planet;Capcom;60.00;7;2006;173
+Killer7;Capcom;50.00;9;2005;174
+Gnosia;Playism;50.00;9;2021;175
+Omori;OMOCAT;60.00;10;2020;176
+Baba Is You;Hempuli;30.00;10;2019;177
+A Short Hike;adamgryu;15.00;10;2019;178
+Papers Please;3909;20.00;10;2013;179
+Return of the Obra Dinn;3909;40.00;10;2018;180
+Limbo;Playdead;20.00;9;2010;181
+Inside;Playdead;40.00;10;2016;182
+Little Nightmares;Tarsier;80.00;9;2017;183
+Super Meat Boy;Team Meat;30.00;9;2010;184
+Binding of Isaac;Nicalis;50.00;10;2014;185
+Enter the Gungeon;Dodge Roll;30.00;10;2016;186
+Spelunky 2;Mossmouth;40.00;9;2020;187
+Slay the Spire;Mega Crit;50.00;10;2019;188
+Balatro;LocalThunk;45.00;10;2024;189
+Monster Train;Shiny Shoe;50.00;9;2020;190
+Darkest Dungeon;Red Hook;50.00;9;2016;191
+Darkest Dungeon II;Red Hook;120.00;8;2023;192
+Frostpunk;11 bit studios;60.00;9;2018;193
+This War of Mine;11 bit studios;40.00;10;2014;194
+Against the Storm;Eremite;90.00;10;2023;195
+Manor Lords;Slavic Magic;120.00;9;2024;196
+Cities Skylines II;Colossal Order;249.00;6;2023;197
+Timberborn;Mechanistry;60.00;9;2021;198
+Oxygen Not Included;Klei;50.00;10;2019;199
+Don't Starve Together;Klei;30.00;10;2016;200
+Mark of the Ninja;Klei;40.00;10;2012;201
+Cult of the Lamb;Massive Monster;80.00;9;2022;202
+Untitled Goose Game;House House;40.00;9;2019;203
+PowerWash Simulator;FuturLab;50.00;9;2022;204
+Slime Rancher 2;Monomi Park;60.00;9;2022;205
+Euro Truck Simulator 2;SCS Software;40.00;10;2012;206

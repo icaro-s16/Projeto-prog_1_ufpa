@@ -2,8 +2,6 @@
 #define PARSER_HPP
 
 #include "kvector.hpp"
-#include <iostream>
-
 #include <string>
 
 

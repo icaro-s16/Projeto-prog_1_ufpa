@@ -39,7 +39,6 @@ class Kvector{
 };
 
 // Implementação das funções de gerenciamento de cópias junto de operadores
-
 template<typename T> Kvector<T>::Kvector(){
     vec = nullptr;
     size = 0;

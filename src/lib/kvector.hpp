@@ -2,6 +2,7 @@
 #define KVECTOR_HPP
 
 #include <cstddef>
+#include <functional>
 
 template<typename T>
 class Kvector{
@@ -21,6 +22,23 @@ class Kvector{
         
         void pop(); // Função para excluir o último item adicionado no vetor
         
+        Kvector<T> filter(bool (*func)(T)){
+            Kvector<T> n_vec;
+            for (size_t i = 0; i < size; i ++){
+                if (func(vec[i])){
+                    n_vec.push(vec[i]);
+                }
+            }
+            return n_vec;
+        }
+
+        void map(T (*func)(T)){
+            for (size_t i = 0; i < size; i ++){
+                vec[i] = func(vec[i]);
+            }
+        }
+
+
         size_t len(); // Retorna a quantidade de itens alocados
 
         T& operator[](const size_t index);  

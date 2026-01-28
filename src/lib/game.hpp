@@ -6,16 +6,17 @@
 #include "result.hpp"
 #include <string>
 #include "parser.hpp"
+#include <cmath>
 
 
 struct Game
 {
-    std::string name;
-    std::string publisher;
-    float price;
-    int avaliation;
-    int year;
-    int id;
+    std::string name = "";
+    std::string publisher = "";
+    float price = 0.0;
+    int avaliation = -1 ;
+    int year = 0;
+    int id = 0;
 
     // Constructor Default
     Game(){}
@@ -34,6 +35,42 @@ struct Game
     avaliation(new_avaliation),
     year(new_year),
     id(new_id){}
+
+    std::string name_default_template(){
+        return (name == "") ? "(empty)" : name;
+    }
+
+    std::string id_default_template(){
+        return (id == 0) ? "(empty)" : std::to_string(id);
+    }
+
+    std::string publisher_default_template(){
+        return (publisher == "" ) ? "(empty)" : publisher;
+    }
+    std::string year_default_template(){
+        return (year == 0) ? "(empty)" : std::to_string(year);
+    }
+    std::string price_default_template(){
+        float epsilon = 0.00001f;
+        return (std::fabs(price - 0.00) < epsilon) ? "(empty)" : std::to_string(price);
+    }
+    std::string avaliation_default_template(){
+        return (avaliation == -1) ? "(empty)" : std::to_string(avaliation);
+    }
+
+    bool can_be_saved(){
+        float epsilon = 0.00001f;
+        return name != "" && publisher != "" && (std::fabs(price - 0.00) > epsilon) && avaliation != -1 && year != 0 && id != 0;
+    }
+
+    void clean(){
+        name = "";
+        publisher = "";
+        price = 0.0;
+        avaliation = -1 ;
+        year = 0;
+        id = 0;        
+    }
 
     bool operator==(Game rhs){
         return this->id == rhs.id || this->name == rhs.name;
@@ -112,6 +149,9 @@ class GamesList{
         }
         Game& operator[](size_t index){
             return list[index];
+        }
+        size_t len(){
+            return list.len();
         }
 
     private:

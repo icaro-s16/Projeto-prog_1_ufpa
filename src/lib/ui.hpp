@@ -16,9 +16,9 @@ namespace Ui{
     // Desenho das telas do app
     void draw_main_window(){
         std::cout<<"============================================================\n";
-        std::cout<<"         🕹️  G A M E   V A U L T   v 1 . 0\n";
+        std::cout<<"            🕹️  G A M E   V A U L T   v 1 . 0\n";
         std::cout<<"============================================================\n";
-        std::cout<<"\n\n         [ Sistema pronto. Aguardando comando... ]\n\n\n";
+        std::cout<<"\n\n      [ System is ready. Waiting for commands... ]\n\n\n";
         std::cout<<"------------------------------------------------------------\n";
         std::cout<<" Commands: add | list | save | help | exit\n";
         std::cout<<" Status: ( ! ) Pending changes\n";

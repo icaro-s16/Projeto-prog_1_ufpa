@@ -53,11 +53,10 @@ std::string format_game_st(Game game){
 
 
 
-class ListGames{
+class GamesList{
     public:
-        ListGames(){};
-
-        Result<std::string, std::string> init_db(std::string path){
+        GamesList(){};
+        Result<std::string, std::string> init_games_list(std::string path){
             Result<std::string, std::string> status; 
             std::ifstream file(path);
             std::string buffer;
@@ -88,10 +87,10 @@ class ListGames{
             file.close();
             return status;
         }
-        Result<std::string, std::string> save_db(std::string path){
+        Result<std::string, std::string> save_games_list(std::string path){
             Result<std::string, std::string> status;
             std::ofstream file(path);
-            std::string header = "# name; publisher; price; avaliation; year; id\n";
+            std::string header = "# name;publisher;price;avaliation;year;id\n";
             if (file.bad()){
                 status.err("Error type bad file!");
                 file.close();
@@ -102,6 +101,7 @@ class ListGames{
                 file << format_game_st(list[i]);
             }
             status.ok("save completed!");
+            return status;
         }
 
         void add_game(Game game){
@@ -110,7 +110,7 @@ class ListGames{
         void remove_game(size_t index){
             list.remove(index);
         }
-        Game& get_game(size_t index){
+        Game& operator[](size_t index){
             return list[index];
         }
 

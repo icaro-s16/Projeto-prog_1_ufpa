@@ -1,1 +1,3 @@
-# Projeto-de-Programa-o-1
+# Projeto de programação 1: App CLI para registro de jogos
+
+

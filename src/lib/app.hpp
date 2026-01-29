@@ -8,9 +8,8 @@
 #include "ui.hpp"
 #include "app_state.hpp"
 #include "command_logic.hpp"
+#include "game_repository.hpp"
 
-
-#define PATH "data/db.csv"
 
 
 
@@ -22,28 +21,27 @@ class App{
             std::string buffer;
             Kvector<std::string> commands;
             // Inicia a lista de jogos e checa possíveis erros
-            Result<std::string, std::string> result = variables.list.init_games_list(PATH);
+            Result<GamesList, std::string> result = init_games_list(PATH);
             if (result.is_err()){
-                variables.error_msg = *result.get_err();
+                app_state.error_msg = *result.get_err();
             }else{
-                variables.actual_size = variables.list.len();
+                app_state.list = *result.get_ok();
             }
             while(is_running){
-                Ui::draw_window(variables);
+                Ui::draw_window(app_state);
                 std::cout<<">>";
                 std::getline(std::cin, buffer);
                 commands = split_string(buffer, ' ');
                 logic::window_logic(
-                    variables, 
+                    app_state, 
                     commands, 
                     is_running
                 );
-                
             };
         }
 
     private :
-        AppState variables;
+        AppState app_state;
         // Status do app
         bool is_running = true;
 };

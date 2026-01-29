@@ -3,7 +3,7 @@
 
 #include "kvector.hpp"
 #include <string>
-
+#include <cctype>
 
 // Função para quebrar uma string em tokens 
 Kvector<std::string> split_string(std::string st, char delimiter){
@@ -23,6 +23,15 @@ Kvector<std::string> split_string(std::string st, char delimiter){
     return tokens;
 }
 
+//Função para retornar a string em caixa baixa para quesito de comparação
+std::string st_to_lower(std::string st){
+    for (size_t i = 0; st[i] != '\0'; i++){
+        if(st[i] != ' '){
+            st[i] = std::tolower(st[i]);
+        }
+    }
+    return st;
+}
 
 
 #endif

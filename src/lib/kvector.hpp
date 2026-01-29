@@ -1,8 +1,10 @@
 #ifndef KVECTOR_HPP
 #define KVECTOR_HPP
 
+#include <initializer_list>
+#include <memory>
 #include <cstddef>
-#include <functional>
+
 
 template<typename T>
 class Kvector{
@@ -23,24 +25,10 @@ class Kvector{
         void pop(); // Função para excluir o último item adicionado no vetor
         
         // Recebe uma função com retorno bool e retorna um vetor filtrado a partir da função
-        Kvector<T> filter(bool (*func)(T)){
-            Kvector<T> n_vec;
-            for (size_t i = 0; i < size; i ++){
-                if (func(vec[i])){
-                    n_vec.push(vec[i]);
-                }
-            }
-            return n_vec;
-        }
+        Kvector<T> filter(bool (*func)(T));
 
         // Transforma o vetor atual a partir de uma função
-        Kvector<T> map(T (*func)(T)){
-            Kvector<T> n_vec;
-            for (size_t i = 0; i < size; i ++){
-                n_vec.push(func(vec[i]));
-            }
-            return n_vec;
-        }
+        Kvector<T> map(T (*func)(T));
 
 
         size_t len(); // Retorna a quantidade de itens alocados
@@ -59,6 +47,25 @@ class Kvector{
         
         void alloc(size_t size); // Alocação padrão
 };
+
+template<typename T> Kvector<T> Kvector<T>::map(T (*func)(T)){
+    Kvector<T> n_vec;
+    for (size_t i = 0; i < size; i ++){
+        n_vec.push(func(vec[i]));
+    }
+    return n_vec;
+}
+
+template<typename T> Kvector<T> Kvector<T>::filter(bool (*func)(T)){
+    Kvector<T> n_vec;
+    for (size_t i = 0; i < size; i ++){
+        if (func(vec[i])){
+            n_vec.push(vec[i]);
+        }
+    }
+    return n_vec;
+}
+
 
 // Implementação das funções de gerenciamento de cópias junto de operadores
 template<typename T> Kvector<T>::Kvector(){

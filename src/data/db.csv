@@ -1,201 +1,201 @@
 # name;publisher;price;avaliation;year;id
-CS2;Valve;55.50;7;1997;2
-BloodBorn;FromSoftware;202.10;10;2016;3
-Dark Souls;FromSoftware;200.00;10;2007;4
-RainbowSix;Ubisoft;200.00;5;2016;10
-bioshock;Bethesda;55.50;10;2007;101
-The Witcher 3;CD Projekt Red;150.00;10;2015;11
-Cyberpunk 2077;CD Projekt Red;199.90;8;2020;12
-Hades;Supergiant;92.50;10;2020;13
-Minecraft;Mojang;120.00;9;2011;14
-Terraria;Re-Logic;30.00;10;2011;15
-Starfield;Bethesda;299.00;7;2023;16
-Doom Eternal;id Software;140.00;9;2020;17
-Skyrim;Bethesda;160.00;10;2011;18
-Fallout 4;Bethesda;80.00;8;2015;19
-Red Dead Redemption 2;Rockstar;249.00;10;2018;20
-GTA V;Rockstar;100.00;9;2013;21
-Sekiro;FromSoftware;199.00;10;2019;22
-God of War;Sony;199.00;10;2018;23
-Spider-Man;Sony;249.00;9;2018;24
-Horizon Zero Dawn;Sony;150.00;8;2017;25
-Left 4 Dead 2;Valve;32.00;10;2009;26
-Portal 2;Valve;32.00;10;2011;27
-Half-Life 2;Valve;32.00;10;2004;28
-Dota 2;Valve;0.00;8;2013;29
-Apex Legends;EA;0.00;8;2019;30
-FIFA 23;EA;299.00;6;2022;31
-Mass Effect;EA;150.00;10;2007;32
-Dragon Age;EA;120.00;9;2009;33
-Battlefield 1;EA;160.00;8;2016;34
-Dead Space;EA;249.00;9;2023;35
-Overwatch 2;Blizzard;0.00;6;2022;36
-Diablo IV;Blizzard;349.00;7;2023;37
-StarCraft II;Blizzard;80.00;10;2010;38
-World of Warcraft;Blizzard;0.00;8;2004;39
-Hollow Knight;Team Cherry;45.00;10;2017;40
-Cuphead;StudioMDHR;36.00;10;2017;41
-Stardew Valley;ConcernedApe;25.00;10;2016;42
-Subnautica;Unknown Worlds;60.00;9;2018;43
-Outer Wilds;Annapurna;80.00;10;2019;44
-Tunic;Finji;50.00;9;2022;45
-Baldurs Gate 3;Larian Studios;199.00;10;2023;46
-Divinity OS 2;Larian Studios;90.00;10;2017;47
-Civilization VI;2K;120.00;9;2016;48
-Bioshock Infinite;2K;90.00;10;2013;49
-Borderlands 2;2K;80.00;9;2012;50
-XCOM 2;2K;150.00;9;2016;51
-Mafia III;2K;130.00;6;2016;52
-Final Fantasy VII;Square Enix;249.00;9;2020;53
-NieR Automata;Square Enix;100.00;10;2017;54
-Kingdom Hearts III;Square Enix;160.00;8;2019;55
-Tomb Raider;Square Enix;80.00;9;2013;56
-Just Cause 3;Square Enix;60.00;7;2015;57
-Persona 5;Atlus;249.00;10;2016;58
-Sonic Frontiers;Sega;199.00;7;2022;59
-Yakuza Like a Dragon;Sega;180.00;9;2020;60
-Total War Warhammer;Sega;240.00;8;2016;61
-Resident Evil 4;Capcom;249.00;10;2023;62
-Monster Hunter World;Capcom;120.00;9;2018;63
-Street Fighter 6;Capcom;249.00;9;2023;64
-Devil May Cry 5;Capcom;90.00;10;2019;65
-Mega Man 11;Capcom;100.00;8;2018;66
-Assassin Creed Valhalla;Ubisoft;249.00;7;2020;67
-Far Cry 6;Ubisoft;249.00;7;2021;68
-Watch Dogs Legion;Ubisoft;150.00;6;2020;69
-The Division 2;Ubisoft;120.00;8;2019;70
-Rayman Legends;Ubisoft;60.00;10;2013;71
-Ghost of Tsushima;Sony;249.00;10;2020;72
-The Last of Us;Sony;249.00;10;2013;73
-Bloodborne;Sony;150.00;10;2015;74
-Returnal;Sony;349.00;9;2021;75
-Death Stranding;505 Games;150.00;9;2019;76
-Control;505 Games;120.00;9;2019;77
-Assetto Corsa;505 Games;40.00;8;2014;78
-Terraria;505 Games;30.00;10;2011;79
-Sifu;Sloclap;75.00;9;2022;80
-Vampire Survivors;poncle;15.00;10;2022;81
-Valheim;Coffee Stain;40.00;9;2021;82
-Satisfactory;Coffee Stain;90.00;9;2019;83
-Deep Rock Galactic;Coffee Stain;60.00;10;2020;84
-Factorio;Wube Software;100.00;10;2016;85
-RimWorld;Ludeon Studios;110.00;10;2018;86
-Project Zomboid;Indie Stone;40.00;9;2013;87
-Among Us;Innersloth;15.00;8;2018;88
-Phasmophobia;Kinetic Games;30.00;9;2020;89
-Rust;Facepunch;120.00;8;2013;90
-Garrys Mod;Facepunch;30.00;10;2006;91
-Undertale;tobyfox;20.00;10;2015;92
-Deltarune;tobyfox;0.00;10;2018;93
-Celeste;Extremely OK;40.00;10;2018;94
-Inscryption;Devolver Digital;50.00;10;2021;95
-Cult of the Lamb;Devolver Digital;80.00;9;2022;96
-Katana ZERO;Devolver Digital;30.00;10;2019;97
-Hotline Miami;Devolver Digital;25.00;10;2012;98
-Outer Wilds;Annapurna;80.00;10;2019;99
-Neon White;Annapurna;80.00;9;2022;100
-Stray;Annapurna;90.00;9;2022;102
-Disco Elysium;ZA/UM;80.00;10;2019;103
-Journey;Annapurna;30.00;10;2012;104
-The Forest;Endnight;40.00;8;2014;105
-Sons of the Forest;Endnight;90.00;8;2023;106
-Alan Wake 2;Epic Games;270.00;10;2023;107
-Control;Remedy;120.00;9;2019;108
-Max Payne 3;Rockstar;99.00;9;2012;109
-L.A. Noire;Rockstar;80.00;8;2011;110
-Bully;Rockstar;40.00;9;2006;111
-Manhunt;Rockstar;30.00;7;2003;112
-Sleeping Dogs;Square Enix;55.00;9;2012;113
-Watch Dogs 2;Ubisoft;150.00;8;2016;114
-Splinter Cell;Ubisoft;40.00;10;2002;115
-Ghost Recon;Ubisoft;199.00;7;2019;116
-The Crew Motorfest;Ubisoft;299.00;8;2023;117
-South Park Stick of Truth;Ubisoft;120.00;10;2014;118
-For Honor;Ubisoft;60.00;7;2017;119
-Anno 1800;Ubisoft;180.00;9;2019;120
-Prince of Persia;Ubisoft;249.00;9;2024;121
-Dead Island 2;Deep Silver;299.00;8;2023;122
-Metro Exodus;Deep Silver;120.00;9;2019;123
-Saints Row IV;Deep Silver;60.00;8;2013;124
-Payday 2;Starbreeze;35.00;9;2013;125
-Payday 3;Starbreeze;199.00;6;2023;126
-Tekken 8;Bandai Namco;349.00;10;2024;127
-Pac-Man World;Bandai Namco;120.00;7;2022;128
-Dark Souls II;FromSoftware;150.00;8;2014;129
-Dark Souls III;FromSoftware;249.00;10;2016;130
-Armored Core VI;FromSoftware;249.00;9;2023;131
-Little Nightmares II;Bandai Namco;120.00;9;2021;132
-Tales of Arise;Bandai Namco;180.00;9;2021;133
-Scarlet Nexus;Bandai Namco;150.00;8;2021;134
-Code Vein;Bandai Namco;120.00;8;2019;135
-Katamari Damacy;Bandai Namco;60.00;9;2018;136
-Titanfall 2;EA;90.00;10;2016;137
-Mirror's Edge Catalyst;EA;80.00;7;2016;138
-Need for Speed Unbound;EA;299.00;7;2022;139
-It Takes Two;EA;199.00;10;2021;140
-Unravel;EA;60.00;9;2016;141
-Crysis Remastered;Crytek;120.00;8;2020;142
-Hunt Showdown;Crytek;90.00;9;2019;143
-Warframe;Digital Extremes;0.00;9;2013;144
-Path of Exile;Grinding Gear;0.00;9;2013;145
-Guild Wars 2;ArenaNet;0.00;9;2012;146
-Palworld;Pocketpair;90.00;8;2024;147
-Lethal Company;Zeekerss;32.00;10;2023;148
-BattleBit Remastered;SgtOkiDoki;50.00;9;2023;149
-Dave the Diver;MINTROCKET;70.00;10;2023;150
-Dredge;Black Salt;80.00;9;2023;151
-Sea of Stars;Sabotage;120.00;10;2023;152
-The Messenger;Sabotage;60.00;9;2018;153
-Blasphemous 2;The Game Kitchen;100.00;9;2023;154
-Dead Cells;Motion Twin;50.00;10;2018;155
-Risk of Rain 2;Hopoo Games;60.00;10;2020;156
-Deep Rock Galactic Survivor;Funday;32.00;8;2024;157
-Valheim;Iron Gate;40.00;9;2021;158
-Hellblade II;Ninja Theory;220.00;9;2024;159
-Hi-Fi RUSH;Tango Gameworks;120.00;10;2023;160
-The Evil Within 2;Tango Gameworks;150.00;9;2017;161
-Ghostwire Tokyo;Tango Gameworks;199.00;7;2022;162
-Wolfenstein II;Bethesda;150.00;9;2017;163
-Prey;Bethesda;120.00;10;2017;164
-Dishonored 2;Bethesda;120.00;10;2016;165
-Deathloop;Bethesda;249.00;8;2021;166
-Quake Champions;id Software;0.00;7;2017;167
-Rage 2;Bethesda;150.00;6;2019;168
-Dragon's Dogma 2;Capcom;339.00;8;2024;169
-Exoprimal;Capcom;249.00;6;2023;170
-Okami HD;Capcom;60.00;10;2017;171
-Viewtiful Joe;Capcom;40.00;9;2003;172
-Lost Planet;Capcom;60.00;7;2006;173
-Killer7;Capcom;50.00;9;2005;174
-Gnosia;Playism;50.00;9;2021;175
-Omori;OMOCAT;60.00;10;2020;176
-Baba Is You;Hempuli;30.00;10;2019;177
-A Short Hike;adamgryu;15.00;10;2019;178
-Papers Please;3909;20.00;10;2013;179
-Return of the Obra Dinn;3909;40.00;10;2018;180
-Limbo;Playdead;20.00;9;2010;181
-Inside;Playdead;40.00;10;2016;182
-Little Nightmares;Tarsier;80.00;9;2017;183
-Super Meat Boy;Team Meat;30.00;9;2010;184
-Binding of Isaac;Nicalis;50.00;10;2014;185
-Enter the Gungeon;Dodge Roll;30.00;10;2016;186
-Spelunky 2;Mossmouth;40.00;9;2020;187
-Slay the Spire;Mega Crit;50.00;10;2019;188
-Balatro;LocalThunk;45.00;10;2024;189
-Monster Train;Shiny Shoe;50.00;9;2020;190
-Darkest Dungeon;Red Hook;50.00;9;2016;191
-Darkest Dungeon II;Red Hook;120.00;8;2023;192
-Frostpunk;11 bit studios;60.00;9;2018;193
-This War of Mine;11 bit studios;40.00;10;2014;194
-Against the Storm;Eremite;90.00;10;2023;195
-Manor Lords;Slavic Magic;120.00;9;2024;196
-Cities Skylines II;Colossal Order;249.00;6;2023;197
-Timberborn;Mechanistry;60.00;9;2021;198
-Oxygen Not Included;Klei;50.00;10;2019;199
-Don't Starve Together;Klei;30.00;10;2016;200
-Mark of the Ninja;Klei;40.00;10;2012;201
-Cult of the Lamb;Massive Monster;80.00;9;2022;202
-Untitled Goose Game;House House;40.00;9;2019;203
-PowerWash Simulator;FuturLab;50.00;9;2022;204
-Slime Rancher 2;Monomi Park;60.00;9;2022;205
-Euro Truck Simulator 2;SCS Software;40.00;10;2012;206
+Metal Halo 7;Square Enix;255.020000;10;1995;1
+Ghost of Quest 8;Bandai Namco;160.530000;5;1992;2
+Ultra Odyssey 5;Konami;114.750000;7;1985;3
+Cyber Mario 4;Rockstar;16.150000;2;1988;4
+Grand Fighter 7;Activision;86.200000;9;2005;5
+God of Halo 2;Konami;140.440000;8;1992;6
+Dark Racing 7;Epic Games;136.390000;3;1999;7
+Call of Origins 3;Naughty Dog;17.430000;2;1992;8
+Street Halo 5;FromSoftware;296.050000;7;2012;9
+Call of Metroid 3;Bethesda;267.680000;3;2004;10
+Light Odyssey 5;Blizzard;85.440000;6;2002;11
+World of Sonic 4;Microsoft;70.500000;3;1993;12
+World of Metroid 8;Sega;37.300000;4;2023;13
+Ultra Scrolls 3;CD Projekt;18.810000;3;1993;14
+Cyber Fighter 3;Rockstar;167.730000;1;2004;15
+Metal Scrolls 7;Valve;35.550000;9;2014;16
+Age of Odyssey 9;Sony;295.730000;5;2009;17
+Grand Metroid 6;Microsoft;143.580000;8;2023;18
+Metal Sonic 7;Bandai Namco;193.650000;5;1987;19
+Mega Fantasy 3;Blizzard;55.340000;6;2020;20
+Mega Valhalla 8;Ubisoft;20.760000;10;1996;21
+League of Racing 9;Valve;296.330000;9;2002;22
+Dragon Halo 5;Epic Games;106.930000;4;1990;23
+Elder Halo 9;Microsoft;123.870000;8;2010;24
+Ghost of Metroid 7;Sega;48.400000;1;2002;25
+Light Valhalla 1;Square Enix;218.540000;2;2009;26
+Dragon Metroid 9;Bethesda;176.070000;4;2023;27
+Mega Valhalla 3;CD Projekt;272.500000;3;2024;28
+Dragon Fantasy 8;Konami;121.670000;10;2011;29
+Cyber Halo 1;Rockstar;55.580000;9;1996;30
+Grand Valhalla 5;Blizzard;132.350000;4;1999;31
+Light Fighter 1;Bandai Namco;234.470000;7;1996;32
+World of Legends 4;CD Projekt;47.940000;3;2021;33
+Space Sonic 3;Capcom;278.290000;1;2022;34
+Age of Sonic 2;Rockstar;259.560000;6;2022;35
+Final Craft 5;Sony;221.860000;3;1994;36
+Super Fantasy 6;Nintendo;197.200000;1;2017;37
+Age of Origins 4;Ubisoft;269.060000;4;2014;38
+Grand Fighter 2;Square Enix;81.820000;7;2025;39
+Call of Legends 1;FromSoftware;120.410000;10;2013;40
+Shadow Halo 1;Rockstar;144.000000;10;2009;41
+Call of Zelda 8;CD Projekt;155.120000;3;2023;42
+League of Redemption 6;Nintendo;150.720000;2;1998;43
+Metal Quest 9;Activision;57.040000;3;2005;44
+Dark Racing 5;EA;203.820000;1;2019;45
+Dark Fantasy 8;Nintendo;65.280000;6;2017;46
+Cyber Fantasy 8;FromSoftware;42.180000;2;1991;47
+Street Sonic 9;Microsoft;94.560000;6;1996;48
+Light Valhalla 1;Bethesda;233.520000;10;2010;49
+Dark Warfare 2;Square Enix;69.550000;5;2004;50
+Ultra Warfare 7;Bandai Namco;135.450000;5;2010;51
+Elder Valhalla 7;Sony;95.990000;4;2013;52
+Metal Sonic 7;Sony;137.320000;4;1989;53
+Age of Mario 1;Rockstar;163.790000;4;1990;54
+Ultra Odyssey 2;Bethesda;98.440000;5;2022;55
+Elder Mario 4;CD Projekt;138.790000;8;2010;56
+World of Fantasy 2;Blizzard;63.120000;9;1997;57
+Shadow Fantasy 8;Bandai Namco;88.650000;7;2002;58
+Cyber Fighter 2;Blizzard;52.090000;6;2008;59
+Age of Souls 5;Bandai Namco;84.150000;2;2019;60
+Elder Mario 4;Bethesda;138.170000;2;2019;61
+Mega Redemption 1;Microsoft;194.840000;3;2003;62
+Dark Fighter 4;Epic Games;172.850000;9;1989;63
+League of Warfare 3;Take-Two;127.610000;2;2023;64
+World of Mario 5;Rockstar;187.680000;3;2018;65
+Age of Quest 6;Nintendo;194.950000;7;2015;66
+Final Fighter 3;EA;171.290000;3;2001;67
+Age of Craft 2;Bethesda;130.780000;8;1991;68
+Ghost of Odyssey 2;Bandai Namco;110.190000;8;2003;69
+Street Fighter 5;EA;20.040000;3;1992;70
+Final Racing 1;Bandai Namco;168.300000;9;2003;71
+God of Craft 5;Nintendo;188.620000;6;1995;72
+Light Zelda 8;FromSoftware;70.740000;2;1988;73
+Space Halo 2;FromSoftware;59.890000;3;1995;74
+World of Sonic 5;Nintendo;267.620000;5;1987;75
+Super Origins 9;Square Enix;149.780000;2;2007;76
+Ultra Mario 5;Rockstar;31.610000;4;1989;77
+League of Zelda 9;Konami;137.820000;2;1990;78
+Shadow Adventure 7;Rockstar;285.450000;10;1993;79
+Dragon Sonic 2;Blizzard;19.120000;4;2016;80
+Shadow Zelda 1;Ubisoft;230.930000;7;2012;81
+Street Halo 3;Bandai Namco;203.260000;2;1986;82
+Grand Fighter 3;CD Projekt;15.090000;3;2002;83
+Ghost of Quest 1;Capcom;191.690000;5;1989;84
+Ultra Fantasy 6;Nintendo;87.520000;9;2001;85
+Shadow Odyssey 5;Naughty Dog;251.220000;1;2023;86
+God of Mario 4;Capcom;36.310000;5;2013;87
+Dark Warfare 1;Microsoft;291.300000;9;2008;88
+Metal Halo 9;FromSoftware;288.810000;7;2003;89
+World of Metroid 7;Bethesda;270.410000;6;2023;90
+Mega Quest 6;Sony;244.720000;3;1985;91
+Cyber Simulator 5;Blizzard;292.420000;2;2016;92
+Grand Zelda 5;Sega;119.820000;8;1996;93
+Final Racing 8;Capcom;73.780000;5;2007;94
+Age of Odyssey 3;Valve;251.170000;10;2024;95
+Street Racing 1;Blizzard;67.950000;10;1990;96
+God of Souls 2;Bethesda;298.560000;2;2019;97
+World of Scrolls 4;Sega;231.870000;10;2002;98
+Metal Zelda 9;Sega;210.250000;1;2013;99
+Ghost of Fighter 3;Nintendo;240.850000;4;1987;100
+Cyber Craft 5;Nintendo;169.820000;7;2010;101
+Street Zelda 1;Square Enix;185.460000;3;2025;102
+Dark Zelda 9;Naughty Dog;16.770000;6;1998;103
+God of Mario 3;Rockstar;23.880000;5;2015;104
+Cyber Zelda 4;Microsoft;57.390000;2;2013;105
+God of Souls 5;Square Enix;71.090000;8;2000;106
+God of Odyssey 8;CD Projekt;14.560000;4;1988;107
+Ghost of Warfare 3;Valve;20.990000;4;2002;108
+World of Legends 8;Konami;163.850000;6;1997;109
+Mega Fantasy 7;Blizzard;14.550000;4;2023;110
+Space Sonic 4;Naughty Dog;237.690000;1;1999;111
+Super Odyssey 1;Rockstar;187.560000;6;2007;112
+Dark Legends 5;Take-Two;69.830000;2;2020;113
+Dragon Fighter 9;Square Enix;109.660000;7;1989;114
+Cyber Mario 6;Epic Games;212.450000;2;2003;115
+World of Warfare 8;Epic Games;155.980000;5;2012;116
+Shadow Redemption 8;Bandai Namco;249.220000;1;1999;117
+World of Warfare 9;Blizzard;63.160000;1;2006;118
+Elder Souls 1;Capcom;86.030000;3;2022;119
+Light Metroid 9;Sega;166.120000;8;1994;120
+Space Warfare 7;Microsoft;46.180000;2;1985;121
+Dragon Valhalla 7;Epic Games;295.600000;5;2009;122
+Call of Origins 8;FromSoftware;192.830000;4;1998;123
+Cyber Origins 1;Nintendo;288.330000;1;2008;124
+Dragon Quest 7;EA;120.300000;9;2012;125
+Final Valhalla 9;Activision;212.670000;5;2022;126
+League of Racing 1;EA;188.530000;2;2024;127
+Dragon Craft 4;Blizzard;249.410000;2;1995;128
+Metal Fighter 9;Square Enix;51.830000;10;1995;129
+God of Redemption 6;Sega;166.260000;5;2002;130
+Super Legends 3;CD Projekt;157.650000;3;2009;131
+Dark Quest 7;CD Projekt;60.320000;1;1989;132
+Cyber Mario 5;Ubisoft;42.820000;9;2007;133
+Ultra Simulator 4;Konami;219.020000;5;2010;134
+Ghost of Adventure 2;Sega;143.960000;5;2010;135
+Dark Souls 2;Bethesda;132.010000;4;2007;136
+Age of Origins 7;Blizzard;115.240000;7;2015;137
+League of Scrolls 5;Valve;142.080000;6;1993;138
+Street Scrolls 7;Konami;166.260000;5;2003;139
+Super Simulator 8;Take-Two;98.390000;1;1996;140
+Age of Zelda 8;Valve;283.740000;9;1998;141
+Call of Origins 3;Square Enix;115.600000;6;1985;142
+Final Metroid 2;Activision;73.850000;8;2006;143
+Ghost of Fantasy 5;Konami;37.240000;3;2024;144
+Cyber Fantasy 6;Capcom;224.820000;8;2025;145
+League of Mario 5;Valve;256.770000;5;2021;146
+Dark Redemption 8;Sega;248.160000;4;2024;147
+World of Simulator 8;Rockstar;245.500000;4;2008;148
+Cyber Mario 9;Blizzard;75.770000;4;2012;149
+Elder Craft 8;Nintendo;123.960000;1;2017;150
+World of Origins 9;Valve;190.960000;9;1993;151
+Space Craft 2;Epic Games;74.970000;1;2009;152
+Elder Souls 4;Konami;57.650000;1;1997;153
+League of Fantasy 5;Microsoft;179.550000;1;1994;154
+Dark Craft 4;EA;200.860000;8;1989;155
+Call of Metroid 8;Sega;59.540000;6;2007;156
+Age of Adventure 7;Nintendo;51.450000;1;2002;157
+Cyber Scrolls 6;Rockstar;89.890000;2;1987;158
+Ultra Simulator 7;Epic Games;283.850000;6;1999;159
+League of Redemption 8;Microsoft;101.880000;6;2020;160
+Shadow Origins 2;CD Projekt;82.900000;9;2010;161
+Street Adventure 9;Sony;241.760000;2;2014;162
+World of Legends 4;Valve;287.330000;1;2016;163
+Final Odyssey 9;Square Enix;205.510000;8;1998;164
+Final Origins 7;Microsoft;187.580000;5;2004;165
+World of Metroid 8;Valve;42.370000;3;2002;166
+Cyber Simulator 2;Microsoft;187.460000;4;1987;167
+Call of Odyssey 7;Capcom;273.680000;6;2009;168
+God of Sonic 1;Epic Games;236.750000;10;1994;169
+Mega Souls 6;Capcom;140.960000;4;2015;170
+Light Odyssey 7;Sega;189.590000;8;2022;171
+Dark Sonic 3;Square Enix;160.920000;10;1989;172
+Cyber Fighter 8;FromSoftware;186.310000;3;1985;173
+Mega Metroid 5;Valve;271.100000;8;2020;174
+World of Fighter 4;Rockstar;193.240000;10;1991;175
+Dark Souls 1;Microsoft;86.010000;7;2007;176
+Street Valhalla 9;Rockstar;278.210000;4;2014;177
+Final Fantasy 9;Sega;230.030000;3;1989;178
+Age of Odyssey 3;Rockstar;44.890000;6;2002;179
+Space Zelda 8;EA;225.220000;1;2002;180
+Metal Origins 9;CD Projekt;272.270000;6;2000;181
+Super Halo 2;CD Projekt;139.930000;8;1997;182
+Space Souls 6;Rockstar;186.160000;10;2012;183
+Age of Scrolls 7;Blizzard;87.270000;1;1996;184
+Ghost of Fighter 2;EA;154.820000;4;2011;185
+Ultra Odyssey 2;Activision;29.610000;1;1992;186
+Call of Legends 8;Sony;85.330000;5;1989;187
+Space Scrolls 3;Epic Games;102.060000;10;2000;188
+Ultra Legends 4;Bandai Namco;89.500000;6;1995;189
+Super Valhalla 5;CD Projekt;223.260000;10;2010;190
+Elder Origins 5;Naughty Dog;297.190000;4;1987;191
+Dark Valhalla 3;Sega;45.470000;5;2018;192
+Age of Valhalla 9;Microsoft;243.360000;5;2014;193
+League of Metroid 6;Take-Two;126.210000;8;2024;194
+Ultra Mario 9;Rockstar;215.750000;9;1992;195
+World of Mario 1;EA;143.800000;6;2012;196
+Mega Fighter 2;Valve;114.490000;8;1988;197
+Age of Racing 1;Bandai Namco;258.240000;5;1997;198
+Space Zelda 2;Konami;271.460000;6;1988;199
+League of Racing 6;Bandai Namco;46.190000;4;2005;200

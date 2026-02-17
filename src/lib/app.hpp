@@ -26,6 +26,7 @@ class App{
                 app_state.error_msg = *result.get_err();
             }else{
                 app_state.list = *result.get_ok();
+                app_state.printable_list = app_state.list;
             }
             while(is_running){
                 Ui::draw_window(app_state);

@@ -14,7 +14,7 @@ struct Game
     std::string name = "";
     std::string publisher = "";
     float price = -1.0;
-    int avaliation = -1 ;
+    int rating = -1 ;
     int year = 0;
     int id = 0;
 
@@ -25,14 +25,14 @@ struct Game
         std::string new_name, 
         std::string new_publisher, 
         float new_price,
-        int new_avaliation,
+        int new_rating,
         int new_year,
         int new_id
     ) : 
     name(new_name), 
     publisher(new_publisher), 
     price(new_price),
-    avaliation(new_avaliation),
+    rating(new_rating),
     year(new_year),
     id(new_id){}
 
@@ -56,16 +56,37 @@ struct Game
         formated_price << std::fixed << std::setprecision(2) << price; 
         return (std::fabs(price - (-1.00)) < epsilon) ? "(empty)" : "R$ " + formated_price.str();
     }
-    std::string avaliation_default_template(){
-        return (avaliation == -1) ? "(empty)" : std::to_string(avaliation);
+    std::string rating_default_template(){
+        return (rating == -1) ? "(empty)" : std::to_string(rating);
     }
-
+    bool field_is_default(std::string field){
+        if (field == "id"){
+            return id == 0;
+        }
+        if (field == "name"){
+            return name == "";
+        }
+        if (field == "publisher"){
+            return publisher == "";
+        }
+        if (field == "year"){
+            return year == 0;
+        }
+        if (field == "price"){
+            float epsilon = 0.00001f;
+            return std::fabs(price - (-1.00)) < epsilon;
+        }
+        if (field == "rating"){
+            return rating == -1;
+        }
+        return false;
+    }
     bool is_default(){
             float epsilon = 0.00001f;
             return name == "" &&
                 publisher == "" && 
                 (std::fabs(price - (-1.00)) < epsilon) && 
-                avaliation == -1 && 
+                rating == -1 && 
                 year == 0 && 
                 id == 0;
     }
@@ -74,7 +95,7 @@ struct Game
         name = "";
         publisher = "";
         price = -1.0;
-        avaliation = -1 ;
+        rating = -1 ;
         year = 0;
         id = 0;        
     }
@@ -89,19 +110,28 @@ struct Game
 
 std::string format_game_st(Game game){
     std::string price = std::to_string(game.price);
-    std::string avaliation = std::to_string(game.avaliation);
+    std::string rating = std::to_string(game.rating);
     std::string year = std::to_string(game.year);
     std::string id = std::to_string(game.id);
-    return game.name + ";" + game.publisher + ";" + price + ";" + avaliation + ";" + year + ";" + id + "\n";
+    return game.name + ";" + game.publisher + ";" + price + ";" + rating + ";" + year + ";" + id + "\n";
 }
 
 
 
 class GamesList{
     public:
+        GamesList(Kvector<Game> other):list(other){}
         GamesList():list(Kvector<Game>()){};
-
-
+        void operator=(GamesList other){
+            list = other.list;
+        }
+        int search_id(int s_id){
+            for(size_t i = 0; i < list.len(); i ++){
+                if (list[i].id == s_id)
+                    return int(i);
+            }
+            return -1;
+        }
         Result<std::string, std::string> valid_id(int id){
             Result<std::string, std::string> result;
             for(size_t i = 0; i < list.len(); i++){
@@ -117,7 +147,7 @@ class GamesList{
         Result<std::string, std::string> valid_name(std::string name){
             Result<std::string, std::string> result;
             for(size_t i = 0; i < list.len(); i++){
-                if (st_to_lower(list[i].name) == st_to_lower(name)){
+                if (st_to_compare(list[i].name) == st_to_compare(name)){
                     result.err("Name already registered");
                     return result;
                 }
@@ -139,6 +169,9 @@ class GamesList{
         size_t len(){
             return list.len();
         }
+        GamesList filter(std::function<bool(Game)> func){
+            return GamesList(list.filter(func)); 
+        };
     private:
         Kvector<Game> list;
 };

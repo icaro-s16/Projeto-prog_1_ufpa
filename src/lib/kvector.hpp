@@ -4,6 +4,7 @@
 #include <initializer_list>
 #include <memory>
 #include <cstddef>
+#include <functional>
 
 
 template<typename T>
@@ -25,10 +26,10 @@ class Kvector{
         void pop(); // Função para excluir o último item adicionado no vetor
         
         // Recebe uma função com retorno bool e retorna um vetor filtrado a partir da função
-        Kvector<T> filter(bool (*func)(T));
+        Kvector<T> filter(std::function<bool(T)> func);
 
         // Transforma o vetor atual a partir de uma função
-        Kvector<T> map(T (*func)(T));
+        Kvector<T> map(std::function<bool(T)> func);
 
 
         size_t len(); // Retorna a quantidade de itens alocados
@@ -48,7 +49,7 @@ class Kvector{
         void alloc(size_t size); // Alocação padrão
 };
 
-template<typename T> Kvector<T> Kvector<T>::map(T (*func)(T)){
+template<typename T> Kvector<T> Kvector<T>::map(std::function<bool(T)> func){
     Kvector<T> n_vec;
     for (size_t i = 0; i < size; i ++){
         n_vec.push(func(vec[i]));
@@ -56,7 +57,7 @@ template<typename T> Kvector<T> Kvector<T>::map(T (*func)(T)){
     return n_vec;
 }
 
-template<typename T> Kvector<T> Kvector<T>::filter(bool (*func)(T)){
+template<typename T> Kvector<T> Kvector<T>::filter(std::function<bool(T)> func){
     Kvector<T> n_vec;
     for (size_t i = 0; i < size; i ++){
         if (func(vec[i])){

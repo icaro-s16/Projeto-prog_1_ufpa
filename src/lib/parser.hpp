@@ -24,13 +24,14 @@ Kvector<std::string> split_string(std::string st, char delimiter){
 }
 
 //Função para retornar a string em caixa baixa para quesito de comparação
-std::string st_to_lower(std::string st){
-    for (size_t i = 0; st[i] != '\0'; i++){
+std::string st_to_compare(std::string st){
+    std::string st_c = "";
+    for (size_t i = 0 ; st[i] != '\0'; i++){
         if(st[i] != ' '){
-            st[i] = std::tolower(st[i]);
+            st_c += std::tolower(st[i]);
         }
     }
-    return st;
+    return st_c;
 }
 
 

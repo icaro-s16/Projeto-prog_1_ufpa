@@ -51,7 +51,8 @@ namespace Ui{
         std::cout << " > search -clean                        : Clear all active filters." << std::endl;
                 
         std::cout << " [ ACTIONS ]" << std::endl;
-        std::cout << " > edit -id <value> | back" << std::endl;
+        std::cout << " > edit -id <value> : back" << std::endl;
+        std::cout << " > delete -id <value> : delete the game with the current id" << std::endl;
         std::cout<<"------------------------------------------------------------" << std::endl;
         std::cout<<" Errors: "<<err_msg<<"\n";
         std::cout<<"------------------------------------------------------------" << std::endl;
@@ -130,10 +131,11 @@ namespace Ui{
         std::cout << "   Flags : -gt (Greater Than), -lt (Less Than)." << std::endl;
 
         std::cout << " ------------------------------------------------------------" << std::endl;
-        std::cout << " [ EDITING & REGISTRATION ]" << std::endl;
+        std::cout << " [ EDITING & REGISTRATION & DELETE ]" << std::endl;
         std::cout << " > <field>:<value> : Set field value." << std::endl;
         std::cout << "   Ex: name:God of War | price:49.90 | year:2018" << std::endl;
         std::cout << " > edit -id <id>   : Enter edit mode for a game ID." << std::endl;
+        std::cout << " > delete -id <id> : delete the game with the current ID" << std::endl;
         std::cout << " > save / back     : Confirm or Cancel actions." << std::endl;
 
         std::cout << "------------------------------------------------------------" << std::endl;

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/icaro_s/projetos/projeto_de_programação_1 /src",
-      "program": "/home/icaro_s/projetos/projeto_de_programação_1 /src/build/Debug/outDebug",
+      "cwd": "/home/icaro_s/projetos/projeto_de_programação_1 ",
+      "program": "/home/icaro_s/projetos/projeto_de_programação_1 /build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

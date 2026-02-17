@@ -15,7 +15,7 @@ namespace logic{
         bool& is_running
     ){
         if(commands.len() != 1){
-            app_state.error_msg = "Command not found!";
+            app_state.error_msg = "Command not found!!";
             return;
         }
         if(commands[0] == "add"){
@@ -30,7 +30,7 @@ namespace logic{
         }else if(commands[0] == "exit"){
             is_running = false;
         }else{
-            app_state.error_msg = "command not found!";
+            app_state.error_msg = "Command not found!!";
         }
     }
 
@@ -54,10 +54,18 @@ namespace logic{
                 int current_index = app_state.list.search_id(edit_id);
                 if (current_index == -1) {
                     app_state.error_msg = "ID not found";
-                    return;
                 }
                 app_state.window = Window::edit_window;
                 app_state.edit_index = current_index;
+            }else if(commands[0] == "delete" && commands[1] == "-id"){
+                int edit_id = std::stoi(commands[2]);
+                int current_index = app_state.list.search_id(edit_id);
+                if (current_index == -1){
+                    app_state.error_msg = "ID not found";
+                }else{
+                    app_state.list.remove_game(current_index);
+                    app_state.printable_list = app_state.list;
+                }
             }else if(commands[0] == "search"){
                 if(commands[1] == "-name"){
                     auto x = commands[2];
@@ -95,8 +103,10 @@ namespace logic{
                         return std::stoi(x) == game.rating;
                     });
                 }else{
-                    app_state.error_msg = "Command not found";
+                    app_state.error_msg = "Command not found!";
                 }
+            }else{
+                app_state.error_msg = "Command not found!";
             }
         }else if(commands.len() == 4 && st_with_space == ""  && commands[0] == "search" ){
             if(commands[1] == "-price"){
@@ -140,14 +150,14 @@ namespace logic{
                         return std::stoi(x) < game.rating;
                     });
             }else{
-                app_state.error_msg = "Command not found";
+                app_state.error_msg = "Command not found!";
             }
 
         }
         else if (commands.len() == 2 && commands[1] == "-clean"){
             app_state.printable_list = app_state.list;
         }else{
-            app_state.error_msg = "Command not found";
+            app_state.error_msg = "Command not found!";
         }
     }
 
@@ -158,7 +168,7 @@ namespace logic{
         if(commands.len() != 1){
             Kvector<std::string> fields = split_string(commands[0], ':');
             if ((fields[0] != "name" || fields[0] != "publisher") && fields.len() != 2){
-                app_stats.error_msg = "Command not found";
+                app_stats.error_msg = "Command not found!";
                 return;
             }
             std::string field = "";
@@ -188,7 +198,7 @@ namespace logic{
         }else{
             Kvector<std::string> fields = split_string(commands[0], ':');
             if (fields.len() != 2){
-                app_stats.error_msg = "Command not found";
+                app_stats.error_msg = "Command not found!";
                 return;
             }
             if (fields[0] == "id"){
@@ -216,7 +226,7 @@ namespace logic{
             }else if(fields[0] == "publisher"){
                 app_stats.new_register_game.publisher = fields[1];
             }else{
-                app_stats.error_msg = "Command not found";
+                app_stats.error_msg = "Command not found!";
                 return;
             }
         }
@@ -229,7 +239,7 @@ namespace logic{
         if(commands.len() != 1){
             Kvector<std::string> fields = split_string(commands[0], ':');
             if ((fields[0] != "name" || fields[0] != "publisher") && fields.len() != 2){
-                app_stats.error_msg = "Command not found";
+                app_stats.error_msg = "Command not found!";
                 return;
             }
             std::string field = "";
@@ -265,7 +275,7 @@ namespace logic{
         }else{
             Kvector<std::string> fields = split_string(commands[0], ':');
             if (fields.len() != 2){
-                app_stats.error_msg = "Command not found";
+                app_stats.error_msg = "Command not found!";
                 return;
             }else if(fields[0] == "year"){
                 app_stats.new_register_game.year = std::stoi(fields[1]);
@@ -284,7 +294,7 @@ namespace logic{
             }else if(fields[0] == "publisher"){
                 app_stats.new_register_game.publisher = fields[1];
             }else{
-                app_stats.error_msg = "Command not found";
+                app_stats.error_msg = "Command not found!";
                 return;
             }
         }
@@ -294,7 +304,7 @@ namespace logic{
         if(commands.len() == 1 && commands[0] == "back"){
             app_state.window = Window::main_window;
         }else{
-            app_state.error_msg = "Command not found";
+            app_state.error_msg = "Command not found!";
         }
     }
 

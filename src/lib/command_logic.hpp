@@ -11,8 +11,7 @@
 namespace logic{
     void main_window_logic(
         AppState& app_state, 
-        Kvector<std::string> commands,
-        bool& is_running
+        Kvector<std::string> commands
     ){
         if(commands.len() != 1){
             app_state.error_msg = "Command not found!!";
@@ -28,7 +27,7 @@ namespace logic{
         }else if(commands[0] == "help"){
             app_state.window = help_window;
         }else if(commands[0] == "exit"){
-            is_running = false;
+            app_state.is_running = false;
         }else{
             app_state.error_msg = "Command not found!!";
         }
@@ -49,7 +48,10 @@ namespace logic{
 
         }if(commands.len() == 3 || st_with_space != ""){
             if(commands[0] == "edit" && commands[1] == "-id"){
-                app_state.window = Window::edit_window;
+                if (!isNumeric(commands[2])){
+                    app_state.error_msg = "Not a valid value!";
+                    return;
+                }
                 int edit_id = std::stoi(commands[2]);
                 int current_index = app_state.list.search_id(edit_id);
                 if (current_index == -1) {
@@ -58,6 +60,10 @@ namespace logic{
                 app_state.window = Window::edit_window;
                 app_state.edit_index = current_index;
             }else if(commands[0] == "delete" && commands[1] == "-id"){
+                if (!isNumeric(commands[2])){
+                    app_state.error_msg = "Not a valid value!";
+                    return;
+                }
                 int edit_id = std::stoi(commands[2]);
                 int current_index = app_state.list.search_id(edit_id);
                 if (current_index == -1){
@@ -82,22 +88,38 @@ namespace logic{
                         return st_to_compare(x) == st_to_compare(game.publisher);
                     });
                 }else if(commands[1] == "-id"){
+                    if (!isNumeric(commands[2])){
+                        app_state.error_msg = "Not a valid value!";
+                        return;
+                    }
                     auto x = commands[2];
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         return std::stoi(x) == game.id;
                     });
                 }else if(commands[1] == "-year"){
+                    if (!isNumeric(commands[2])){
+                        app_state.error_msg = "Not a valid value!";
+                        return;
+                    }
                     auto x = commands[2];
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         return std::stoi(x) == game.year;
                     });
                 }else if(commands[1] == "-price"){
+                    if (!isNumeric(commands[2])){
+                        app_state.error_msg = "Not a valid value!";
+                        return;
+                    }
                     auto x = commands[2];
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         float epsilon = 0.00001f;
                         return std::fabs(std::stod(x) - (game.price)) < epsilon;
                     });
                 }else if(commands[1] == "-rating"){
+                    if (!isNumeric(commands[2])){
+                        app_state.error_msg = "Not a valid value!";
+                        return;
+                    }
                     auto x = commands[2];
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         return std::stoi(x) == game.rating;
@@ -109,6 +131,10 @@ namespace logic{
                 app_state.error_msg = "Command not found!";
             }
         }else if(commands.len() == 4 && st_with_space == ""  && commands[0] == "search" ){
+            if (!isNumeric(commands[3])){
+                app_state.error_msg = "Not a valid value!";
+                return;
+            }
             if(commands[1] == "-price"){
                 auto x = commands[3];
                 if (commands[2] == "-lt")
@@ -119,6 +145,10 @@ namespace logic{
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         return std::stod(x) < game.price;
                     });
+                else{
+                    app_state.error_msg = "Command not found!";
+                    return;
+                }
             }else if(commands[1] == "-year"){
                 auto x = commands[3];
                 if (commands[2] == "-lt")
@@ -129,6 +159,10 @@ namespace logic{
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         return std::stoi(x) < game.year;
                     });
+                else{
+                    app_state.error_msg = "Command not found!";
+                    return;
+                }
             }else if(commands[1] == "-id"){
                 auto x = commands[3];
                 if (commands[2] == "-lt")
@@ -139,6 +173,10 @@ namespace logic{
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         return std::stoi(x) < game.id;
                     });
+                else{
+                    app_state.error_msg = "Command not found!";
+                    return;
+                }
             }else if (commands[1] == "-rating"){
                 auto x = commands[3];
                 if (commands[2] == "-lt")
@@ -149,6 +187,10 @@ namespace logic{
                     app_state.printable_list = app_state.list.filter([x](Game game){
                         return std::stoi(x) < game.rating;
                     });
+                else{
+                    app_state.error_msg = "Command not found!";
+                    return;
+                }
             }else{
                 app_state.error_msg = "Command not found!";
             }
@@ -278,10 +320,22 @@ namespace logic{
                 app_stats.error_msg = "Command not found!";
                 return;
             }else if(fields[0] == "year"){
+                if (!isNumeric(fields[1])){
+                    app_stats.error_msg = "Not a valid value!";
+                    return;
+                }
                 app_stats.new_register_game.year = std::stoi(fields[1]);
             }else if(fields[0] == "price"){
+                if (!isNumeric(fields[1])){
+                    app_stats.error_msg = "Not a valid value!";
+                    return;
+                }
                 app_stats.new_register_game.price = std::stof(fields[1]);
             }else if(fields[0] == "rating"){
+                if (!isNumeric(fields[1])){
+                    app_stats.error_msg = "Not a valid value!";
+                    return;
+                }
                 app_stats.new_register_game.rating = std::stoi(fields[1]);
             }else if(fields[0] == "name"){
                 auto valid_name = app_stats.list.valid_name(fields[1]);
@@ -310,44 +364,42 @@ namespace logic{
 
     void window_logic(
         AppState& app_state, 
-        Kvector<std::string> commands,
-        bool& is_running
+        Kvector<std::string> commands
     ){
         app_state.error_msg = "";
         switch(app_state.window){
-            case main_window:
-                main_window_logic(
-                    app_state, 
-                    commands, 
-                    is_running
-                );
-                break;
-            case list_window:
-                list_window_logic(
-                    app_state,
-                    commands
-                );
-                break;
-            case register_window:
-                register_window_logic(
-                    app_state, 
-                    commands
-                );
-                break;
-            case edit_window:
-                edit_window_logic(
-                    app_state,
-                    commands
-                );
-                break;
-            case help_window:
-                help_window_logic(
-                    app_state,
-                    commands
-                );
-                break;
-            default:
-                break;
+        case main_window:
+            main_window_logic(
+                app_state, 
+                commands
+            );
+            break;
+        case list_window:
+            list_window_logic(
+                app_state,
+                commands
+            );
+            break;
+        case register_window:
+            register_window_logic(
+                app_state, 
+                commands
+            );
+            break;
+        case edit_window:
+            edit_window_logic(
+                app_state,
+                commands
+            );
+            break;
+        case help_window:
+            help_window_logic(
+                app_state,
+                commands
+            );
+            break;
+        default:
+            break;
         }
     }
 }

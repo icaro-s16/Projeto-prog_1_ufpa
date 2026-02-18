@@ -119,61 +119,61 @@ std::string format_game_st(Game game){
 
 
 class GamesList{
-    public:
-        GamesList(Kvector<Game> other):list(other){}
-        GamesList():list(Kvector<Game>()){};
-        void operator=(GamesList other){
-            list = other.list;
+public:
+    GamesList(Kvector<Game> other):list(other){}
+    GamesList():list(Kvector<Game>()){};
+    void operator=(GamesList other){
+        list = other.list;
+    }
+    int search_id(int s_id){
+        for(size_t i = 0; i < list.len(); i ++){
+            if (list[i].id == s_id)
+                return int(i);
         }
-        int search_id(int s_id){
-            for(size_t i = 0; i < list.len(); i ++){
-                if (list[i].id == s_id)
-                    return int(i);
+        return -1;
+    }
+    Result<std::string, std::string> valid_id(int id){
+        Result<std::string, std::string> result;
+        for(size_t i = 0; i < list.len(); i++){
+            if (list[i].id == id){
+                result.err("ID already registered");
+                return result;
             }
-            return -1;
         }
-        Result<std::string, std::string> valid_id(int id){
-            Result<std::string, std::string> result;
-            for(size_t i = 0; i < list.len(); i++){
-                if (list[i].id == id){
-                    result.err("ID already registered");
-                    return result;
-                }
+        
+        result.ok("Valid field");
+        return result;
+    }
+    Result<std::string, std::string> valid_name(std::string name){
+        Result<std::string, std::string> result;
+        for(size_t i = 0; i < list.len(); i++){
+            if (st_to_compare(list[i].name) == st_to_compare(name)){
+                result.err("Name already registered");
+                return result;
             }
-            
-            result.ok("Valid field");
-            return result;
         }
-        Result<std::string, std::string> valid_name(std::string name){
-            Result<std::string, std::string> result;
-            for(size_t i = 0; i < list.len(); i++){
-                if (st_to_compare(list[i].name) == st_to_compare(name)){
-                    result.err("Name already registered");
-                    return result;
-                }
-            }
-            
-            result.ok("Valid field");
-            return result;
-        }
+        
+        result.ok("Valid field");
+        return result;
+    }
 
-        void add_game(Game game){
-            list.push(game);
-        }
-        void remove_game(size_t index){
-            list.remove(index);
-        }
-        Game& operator[](size_t index){
-            return list[index];
-        }
-        size_t len(){
-            return list.len();
-        }
-        GamesList filter(std::function<bool(Game)> func){
-            return GamesList(list.filter(func)); 
-        };
-    private:
-        Kvector<Game> list;
+    void add_game(Game game){
+        list.push(game);
+    }
+    void remove_game(size_t index){
+        list.remove(index);
+    }
+    Game& operator[](size_t index){
+        return list[index];
+    }
+    size_t len(){
+        return list.len();
+    }
+    GamesList filter(std::function<bool(Game)> func){
+        return GamesList(list.filter(func)); 
+    };
+private:
+    Kvector<Game> list;
 };
 
 

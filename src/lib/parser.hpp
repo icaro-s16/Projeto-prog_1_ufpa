@@ -4,6 +4,19 @@
 #include "kvector.hpp"
 #include <string>
 #include <cctype>
+#include <stdexcept>
+
+bool isNumeric(const std::string& s) {
+    if (s.empty()) return false;
+    try {
+        std::stod(s); // Tenta converter para double
+        return true;
+    } catch (const std::invalid_argument& e) {
+        return false; // Nenhuma conversão possível
+    } catch (const std::out_of_range& e) {
+        return false; // Valor muito grande/pequeno
+    }
+}
 
 // Função para quebrar uma string em tokens 
 Kvector<std::string> split_string(std::string st, char delimiter){

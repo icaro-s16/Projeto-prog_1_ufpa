@@ -20,6 +20,8 @@ struct AppState{
     std::string error_msg = "";
     // Usado para editar o valor
     int edit_index = -1;
+
+    bool is_running = true;
 };
 
 #endif 

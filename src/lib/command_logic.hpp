@@ -244,6 +244,10 @@ namespace logic{
                 return;
             }
             if (fields[0] == "id"){
+                if (!isNumeric(fields[1])){
+                    app_stats.error_msg = "Not a valid value!";
+                    return;
+                }
                 auto valid_id = app_stats.list.valid_id(std::stoi(fields[1]));
                 if (valid_id.is_ok()){
                     app_stats.new_register_game.id = std::stoi(fields[1]);
@@ -252,10 +256,22 @@ namespace logic{
                     return;
                 }
             }else if(fields[0] == "year"){
+                if (!isNumeric(fields[1])){
+                    app_stats.error_msg = "Not a valid value!";
+                    return;
+                }
                 app_stats.new_register_game.year = std::stoi(fields[1]);
             }else if(fields[0] == "price"){
+                if (!isNumeric(fields[1])){
+                    app_stats.error_msg = "Not a valid value!";
+                    return;
+                }
                 app_stats.new_register_game.price = std::stof(fields[1]);
             }else if(fields[0] == "rating"){
+                if (!isNumeric(fields[1])){
+                    app_stats.error_msg = "Not a valid value!";
+                    return;
+                }
                 app_stats.new_register_game.rating = std::stoi(fields[1]);
             }else if(fields[0] == "name"){
                 auto valid_name = app_stats.list.valid_name(fields[1]);

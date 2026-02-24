@@ -307,7 +307,7 @@ namespace logic{
             }
             if (fields[0] == "name"){
                 auto valid_name = app_stats.list.valid_name(field);
-                if (valid_name.is_ok()){
+                if (valid_name.is_ok() || st_to_compare(field) == st_to_compare(app_stats.list[app_stats.edit_index].name)){
                     app_stats.new_register_game.name = field;
                 }else{
                     app_stats.error_msg = *valid_name.get_err();
@@ -355,7 +355,7 @@ namespace logic{
                 app_stats.new_register_game.rating = std::stoi(fields[1]);
             }else if(fields[0] == "name"){
                 auto valid_name = app_stats.list.valid_name(fields[1]);
-                if (valid_name.is_ok()){
+                if (valid_name.is_ok() || st_to_compare(fields[1]) == st_to_compare(app_stats.list[app_stats.edit_index].name)){
                     app_stats.new_register_game.name = fields[1];
                 }else{
                     app_stats.error_msg = *valid_name.get_err();
